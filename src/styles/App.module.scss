@@ -1,0 +1,98 @@
+@use "utilities/global" as *;
+
+.main {
+  padding: rem(88px) rem(24px) rem(68px);
+}
+
+.top_section {
+  color: white;
+  text-align: center;
+  margin-bottom: rem(64px);
+}
+
+.top__heading {
+  @include setFont(rem(28px), 36px, 700);
+  letter-spacing: -0.291667px;
+  margin-bottom: em(16px, 28px);
+}
+
+.top__paragraph {
+  @include setFont(rem(16px), 26px, 500);
+}
+
+.trial {
+  background-color: color(blue);
+  color: white;
+  @include setFont(rem(15px), 26px, 400);
+  letter-spacing: 0.267857px;
+  text-align: center;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: rem(18px) rem(66px);
+  margin-bottom: rem(24px);
+  strong {
+    font-weight: 700;
+  }
+  abbr {
+    text-decoration: none;
+  }
+}
+
+.form_container {
+  background-color: white;
+  padding: rem(24px);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  margin-bottom: rem(8px);
+  & > * {
+    height: rem(56px);
+    border-radius: 5px;
+  }
+}
+
+.form__input {
+  border: 1px solid hsl(0, 0%, 87%);
+  padding: rem(15px) rem(19.41px);
+  @include setFont(rem(14px), 26px, 600);
+  color: color(dark-blue);
+  letter-spacing: 0.25px;
+  &::placeholder {
+    @include setFont(rem(14px), 26px, 600);
+    color: hsla(248, 9%, 26%, 0.75);
+  }
+  &:focus {
+    border: 1px solid color(blue);
+    outline: none;
+  }
+}
+
+.submit_button {
+  @include setFont(rem(15px), 26px, 600);
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-block: rem(15px);
+  background-color: color(green);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  cursor: pointer;
+}
+
+.form__footer {
+  @include setFont(rem(11px), 21px, 500);
+  color: color(grayish-blue);
+  text-align: center;
+  margin-inline: rem(15px);
+}
+
+.footer__link:any-link {
+  font-weight: 700;
+  color: color(red);
+  text-decoration: none;
+}

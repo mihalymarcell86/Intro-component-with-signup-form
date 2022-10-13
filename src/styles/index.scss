@@ -1,0 +1,11 @@
+@use "utilities/global" as *;
+
+@include setup;
+
+body {
+  font-family: $font-poppins;
+  background: {
+    color: color(red);
+    image: url("../images/bg-intro-mobile.png");
+  }
+}
