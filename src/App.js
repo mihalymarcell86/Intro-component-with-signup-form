@@ -13,7 +13,7 @@ function App() {
           invaluable.
         </p>
       </section>
-      <div>
+      <div className={scss.form_section}>
         <div className={scss.trial}>
           <strong>Try it free 7 days</strong> then $20/
           <abbr title="month">mo.</abbr> thereafter

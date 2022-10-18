@@ -8,4 +8,7 @@ body {
     color: color(red);
     image: url("../images/bg-intro-mobile.png");
   }
+  @media (min-width: $breakpoint) {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
 }
