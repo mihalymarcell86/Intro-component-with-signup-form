@@ -3,7 +3,7 @@ import scss from "../styles/Attribution.module.scss";
 export default function Attribution() {
   return (
     <footer>
-      <p class={scss.attribution}>
+      <p className={scss.attribution}>
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
