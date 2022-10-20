@@ -13,9 +13,7 @@ function RegistrationForm() {
 
   const [inputIsValid, setInputisValid] = useState(defaultState);
 
-  const formIsValid = Object.values(inputIsValid).every(
-    (value) => value === true
-  );
+  const formIsValid = Object.values(inputIsValid).every((value) => value);
 
   function updateValidity(name, validity) {
     setInputisValid((prev) => ({ ...prev, [name]: validity }));

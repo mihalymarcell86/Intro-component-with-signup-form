@@ -25,7 +25,7 @@ function FormInput({ placeholder, type, name, onUpdate }) {
       <div className={inputError ? scss["wrapper--error"] : scss.input_wrapper}>
         <input
           placeholder={placeholder}
-          className={scss.input_field}
+          className={inputError ? scss["input_field--error"] : scss.input_field}
           type={type ? type : "text"}
           onBlur={validateInput}
         />
