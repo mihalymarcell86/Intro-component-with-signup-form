@@ -14,6 +14,9 @@ function FormInput({ placeholder, type, name, onUpdate }) {
     } else if (type === "email" && !validator.isEmail(e.target.value)) {
       setInputError("Looks like this is not an email");
       onUpdate("email", false);
+    } else if (type === "password" && e.target.value.length < 6) {
+      setInputError("Password should be at least 6 characters");
+      onUpdate("password", false);
     } else {
       setInputError(null);
       onUpdate(name, true);
