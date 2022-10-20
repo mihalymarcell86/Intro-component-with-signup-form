@@ -1,0 +1,30 @@
+@use "utilities/global" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  margin-bottom: rem(8px);
+  @media (min-width: $breakpoint) {
+    gap: rem(20px);
+  }
+}
+
+.submit_button {
+  @include setFont(rem(15px), 26px, 600);
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  padding-block: rem(15px);
+  background-color: color(green);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  cursor: pointer;
+  &:hover {
+    background-color: hsla(154, 65%, 68%, 1);
+  }
+  &:active {
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.0908818);
+  }
+}

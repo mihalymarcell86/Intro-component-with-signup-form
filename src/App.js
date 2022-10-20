@@ -1,3 +1,4 @@
+import RegistrationForm from "./components/RegistrationForm";
 import Attribution from "./components/Attribution";
 
 import scss from "./styles/App.module.scss";
@@ -13,39 +14,13 @@ function App() {
           invaluable.
         </p>
       </section>
-      <div className={scss.form_section}>
-        <div className={scss.trial}>
+      <section className={scss.form_section}>
+        <h2 className={scss.trial}>
           <strong>Try it free 7 days</strong> then $20/
           <abbr title="month">mo.</abbr> thereafter
-        </div>
+        </h2>
         <div className={scss.form_container}>
-          <form novalidate className={scss.form}>
-            <input
-              id="firstname"
-              placeholder="First Name"
-              className={scss.form__input}
-            />
-            <input
-              id="lastname"
-              placeholder="Last Name"
-              className={scss.form__input}
-            />
-            <input
-              type="email"
-              id="email"
-              placeholder="Email Address"
-              className={scss.form__input}
-            />
-            <input
-              type="password"
-              id="password"
-              placeholder="Password"
-              className={scss.form__input}
-            />
-            <button className={scss.submit_button}>
-              Claim your free trial
-            </button>
-          </form>
+          <RegistrationForm />
           <p className={scss.form__footer}>
             By clicking the button, you are agreeing to our{" "}
             <a href="/" className={scss.footer__link}>
@@ -53,7 +28,7 @@ function App() {
             </a>
           </p>
         </div>
-      </div>
+      </section>
       <Attribution />
     </main>
   );

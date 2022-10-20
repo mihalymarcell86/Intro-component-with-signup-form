@@ -8,7 +8,8 @@
   margin-inline: auto;
   @media (min-width: $breakpoint) {
     max-width: none;
-    padding: rem(121px) div(165, 1440) * 100vw;
+    height: 100vh;
+    padding: 0px div(165, 1440) * 100vw;
     display: flex;
     align-items: center;
   }
@@ -77,48 +78,6 @@
   @media (min-width: $breakpoint) {
     padding: rem(40px);
   }
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: rem(16px);
-  margin-bottom: rem(8px);
-  & > * {
-    height: rem(56px);
-    border-radius: 5px;
-  }
-  @media (min-width: $breakpoint) {
-    gap: rem(20px);
-  }
-}
-
-.form__input {
-  border: 1px solid hsl(0, 0%, 87%);
-  padding: rem(15px) rem(19.41px);
-  @include setFont(rem(14px), 26px, 600);
-  color: color(dark-blue);
-  letter-spacing: 0.25px;
-  &::placeholder {
-    color: hsla(248, 9%, 26%, 0.75);
-  }
-  &:focus {
-    border: 1px solid color(blue);
-    outline: none;
-  }
-}
-
-.submit_button {
-  @include setFont(rem(15px), 26px, 600);
-  letter-spacing: 1px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  border: 0;
-  padding-block: rem(15px);
-  background-color: color(green);
-  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
-  cursor: pointer;
 }
 
 .form__footer {
